@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+}
+
+header {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    background-color: #f3f5fc;
+    border-bottom: 0px solid #ddd;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.left, .right {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    width: 70%;
+    background-color:#f3f5fc;
+}
+
+.right {
+    width: 30%;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.textarea-input {
+    width: 577px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f3f5fc;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: inherit;
+    font-family: 'Inter', sans-serif;
+    color: #0a3871;
+    max-width: 100%;
+    cursor: pointer;
+    line-height: 150%;
+    font-weight: 400;
+}
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+  .biexclamation-circle-fill-icon1 {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .biexclamation-circle-fill-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-12xs) 0 0;
+  }
+  .solo-letras-minsculas {
+    position: relative;
+    line-height: 150%;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0a3871;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Inter', sans-serif;
+    min-width: 213px;
+    max-width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.textarea-output {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #0a3871;
+
+}
+
+#copyButton {
+    width: 100%;
+    max-width: 200px;
+    background-color: #495057;
+    font-family: 'Inter', sans-serif;
+}
+
+#copyButton:hover {
+    background-color: #343a40;
+}
+
+#resultImage {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#resultText{
+    font-size: 28px;
+    color: #343A40;
+}
+#infoText {
+    font-size: 16px;
+    color: #495057;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .left, .right {
+        width: 100%;
+    }
+    
+    textarea {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
